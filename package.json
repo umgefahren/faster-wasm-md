@@ -3,7 +3,7 @@
   "collaborators": [
     "Hannes <55623006+umgefahren@users.noreply.github.com>"
   ],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "files": [
     "faster_wasm_md_bg.wasm",
     "faster_wasm_md.js",
