@@ -1,0 +1,19 @@
+{
+  "name": "faster-wasm-md",
+  "collaborators": [
+    "Hannes <55623006+umgefahren@users.noreply.github.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "faster_wasm_md_bg.wasm",
+    "faster_wasm_md.js",
+    "faster_wasm_md_bg.js",
+    "faster_wasm_md.d.ts"
+  ],
+  "module": "faster_wasm_md.js",
+  "types": "faster_wasm_md.d.ts",
+  "sideEffects": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
