@@ -30,7 +30,7 @@ jobs:
         run: "wasm-pack pack"
       - name: Copy package.json
         run: "cp package.json pkg/."
+      - name: Show package.json
+        run: cat pkg/package.json
       - name: Publish WASM-Pack
         run: "wasm-pack publish"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
