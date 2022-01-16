@@ -23,7 +23,7 @@ jobs:
         with:
           registry-url: 'https://npm.pkg.github.com'
       - name: Login
-        run: "wasm-pack login"
+        run: "wasm-pack login -r=https://npm.pkg.github.com -s=@umgefahren"
       - name: Build
         run: "wasm-pack build"
       - name: Pack
