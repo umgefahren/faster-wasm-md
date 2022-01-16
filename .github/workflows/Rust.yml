@@ -24,6 +24,6 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
 
       - name: Publish WASM-Pack
-        run: "wasm-publish"
+        run: "wasm-pack publish"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
