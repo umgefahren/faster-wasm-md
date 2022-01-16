@@ -22,6 +22,8 @@ jobs:
         name: Setup Node
         with:
           registry-url: 'https://npm.pkg.github.com'
+      - name: Login
+        run: "wasm-pack login"
       - name: Build
         run: "wasm-pack build"
       - name: Pack
