@@ -22,7 +22,10 @@ jobs:
         name: Setup Node
         with:
           registry-url: 'https://npm.pkg.github.com'
-
+      - name: Build
+        run: "wasm-pack build"
+      - name: Pack
+        run: "wasm-pack pack"
       - name: Publish WASM-Pack
         run: "wasm-pack publish"
         env:
