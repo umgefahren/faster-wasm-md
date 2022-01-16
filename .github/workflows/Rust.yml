@@ -28,6 +28,8 @@ jobs:
         run: "wasm-pack build"
       - name: Pack
         run: "wasm-pack pack"
+      - name: Copy package.json
+        run: "cp package.json pkg/."
       - name: Publish WASM-Pack
         run: "wasm-pack publish"
         env:
