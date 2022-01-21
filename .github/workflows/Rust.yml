@@ -34,9 +34,9 @@ jobs:
         run: cat pkg/package.json
       - name: Publish WASM-Pack
         run: |
-          echo -e "$USERNAME\n$TOKEN\n$USERNAME_EMAIL\n" wasm-pack login -r=https://npm.pkg.github.com -s=@umgefahren
+          echo -e "$USERNAME\n$TOKEN\n$USERNAME_EMAIL\n" wasm-pack login -s=@umgefahren
           wasm-pack publish
         env:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN: ${{ secrets.NPM_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           USERNAME_EMAIL: "55623006+umgefahren@users.noreply.github.com"
